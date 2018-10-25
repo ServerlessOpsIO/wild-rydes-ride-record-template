@@ -17,6 +17,8 @@ provider:
   name: aws
   runtime: python3.6
   stage: "${opt:stage, env:SLS_STAGE, 'dev'}"
+  region: "${opt:region, 'us-east-2'}"
+  cfnRole: "arn:aws:iam::${env:AWS_ACCOUNT}:role/CloudFormationDeployRole"
   environment:
     LOG_LEVEL: "${env:LOG_LEVEL, 'INFO'}"
 
