@@ -29,7 +29,7 @@ functions:
     handler: handlers/put_ride_record.handler
     description: "Create Ride Record In Table"
     memorySize: 128
-    timeout: 30
+    timeout: 29
 
 
 # Addtional service resources and configuration.
